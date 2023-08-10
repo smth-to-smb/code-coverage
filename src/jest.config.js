@@ -7,5 +7,6 @@ module.exports = {
     coverageReporters: ['lcovonly'],
     collectCoverageFrom: ['subtract.js', 
     'sum.js', 
-    'divide.js']
+    'divide.js',
+    'multiply.js']
 };
