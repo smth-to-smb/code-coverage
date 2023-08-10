@@ -8,5 +8,9 @@ test('dels 10 - 8 to equal 2', () => {
   expect(sum.del(10, 8)).toBe(2);
 });
 
+const sum = require('./sum');
 
+test('divides 6 by 2 to equal 3', () => {
+  expect(sum.sum(6, 2)).toBe(3);
+});
 
