@@ -1,4 +1,4 @@
-name: JavaScript - Jest Test
+name: Code coverage test
 
 on:
   workflow_dispatch:
