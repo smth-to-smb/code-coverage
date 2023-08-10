@@ -26,9 +26,11 @@ jobs:
 
     - name: Install dependencies
       run: npm ci
+      working-directory: src
 
     - name: Run tests
       run: npm test
+      working-directory: src
       
     - name: Archive coverage data
       uses: actions/upload-artifact@v2
@@ -41,4 +43,5 @@ jobs:
       env:
         QODANA_TOKEN: ${{ secrets.QODANA_TOKEN_JS }}
       with:
+        args: "-i,src,--linter,jetbrains/qodana-js:2023.2-eap"
         pr-mode: false
