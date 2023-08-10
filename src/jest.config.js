@@ -3,7 +3,7 @@ module.exports = {
     transform: {
         '\\.[tj]s$': 'babel-jest',
     },
-    rootDir:'/';
+    rootDir:'/',
     coverageDirectory: '.qodana/code-coverage/',
     coverageReporters: ['lcovonly'],
     collectCoverageFrom: ['src/subtract.js', 
