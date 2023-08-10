@@ -26,22 +26,22 @@ jobs:
 
     - name: Install dependencies
       run: npm ci
-      working-directory: JS/jest
+      working-directory: src
 
     - name: Run tests
       run: npm test
-      working-directory: JS/jest
+      working-directory: src
       
     - name: Archive coverage data
       uses: actions/upload-artifact@v2
       with:
         name: jest-coverage-data
-        path: JS/jest/.qodana/code-coverage
+        path: coverage/.qodana/code-coverage
 
     - name: Qodana Scan
       uses: JetBrains/qodana-action@main
       env:
         QODANA_TOKEN: ${{ secrets.QODANA_TOKEN_JS }}
       with:
-        args: "-i,JS/jest,--linter,jetbrains/qodana-js:2023.2-eap"
+        args: "-i,src,--linter,jetbrains/qodana-js:2023.2-eap"
         pr-mode: false
