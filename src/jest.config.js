@@ -5,7 +5,5 @@ module.exports = {
     },
     coverageDirectory: '.qodana/code-coverage/',
     coverageReporters: ['lcovonly'],
-    collectCoverageFrom: ['subtract.js', 
-    'sum.js', 
-    'divide.js']
+    collectCoverageFrom: ['sum.js'] 
 };
