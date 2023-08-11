@@ -9,6 +9,6 @@ test('dels 10 - 8 to equal 2', () => {
 });
 
 test('muls 10 * 8 to equal 80', () => {
-  expect(sum.del(10, 8)).toBe(80);
+  expect(sum.mul(10, 8)).toBe(80);
 });
 
