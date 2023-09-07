@@ -17,4 +17,11 @@ function del(a, b) {
 module.exports.del = del;
 
 
-console.log(1+"text")
+var x = 5;
+var y = "10";
+
+// This line will cause a TypeError because you cannot add a number and a string.
+var result = x + y;
+
+console.log(result);
+
