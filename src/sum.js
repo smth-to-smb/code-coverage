@@ -16,3 +16,5 @@ function del(a, b) {
 
 module.exports.del = del;
 
+
+console.log(1+"text")
